@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ueg</groupId>
-	<artifactId>progIII</artifactId>
+	<artifactId>nutshell</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>trabalho01</name>
-	<description>Trabalho 01 - Criação de CRUD de clientes </description>
+	<name>nutshell</name>
+	<description>Nutshell - Projeto Interdisciplinar de Desenvolvimento de Software</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
