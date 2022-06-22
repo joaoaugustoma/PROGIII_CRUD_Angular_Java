@@ -17,15 +17,4 @@ public class NutshellApplication {
 		SpringApplication.run(NutshellApplication.class, args);
 	}
 
-//	@Bean
-//	public CommandLineRunner commandLineRunner(ClienteRepository clienteRepository) {
-//		return args -> {
-//			Cliente cliente = new Cliente("70240686128", "João Augusto", "Moreira Ananias", new Date(2001 - 1900, Calendar.NOVEMBER, 16), "62991868792", "Rua L-21 Qd 46 Lt 16 Jardim Europa");
-//			cliente  = clienteRepository.save(cliente);
-//
-//			cliente = new Cliente("12345678912", "Isadora Pinto", "Aquino Rego", new Date(1997 - 1900, Calendar.MAY, 4), "6299999999", "Rua Sasuke Naruto");
-//			cliente  = clienteRepository.save(cliente);
-//		};
-//	}
-
 }
