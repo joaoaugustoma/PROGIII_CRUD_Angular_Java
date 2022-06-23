@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -16,7 +18,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     ClienteModule,
     HttpClientModule,
-
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
