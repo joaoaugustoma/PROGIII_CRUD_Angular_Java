@@ -15,14 +15,15 @@ export class ClienteService {
   public getClientes(): Observable<Cliente[]> {
     return this.http.get<Cliente[]>(this.urlBackend + '/api/v1/cliente/')
   }
-  public salvar(cliente: Cliente): Observable<Cliente>|undefined{
-    if(!cliente.cpf){
-      return this.http.post<Cliente>(this.urlBackend+'/api/v1/cliente/',cliente)
-    }else{
-      return this.http.patch<Cliente>(this.urlBackend+'/api/v1/cliente/'+cliente.cpf, cliente)
-    }
 
+  public salvar(cliente: Cliente): Observable<Cliente>|undefined{
+    return this.http.post<Cliente>(this.urlBackend+'/api/v1/cliente/',cliente)
   }
+
+  public incluir(cliente: Cliente) : Observable<Cliente>|undefined{
+    return this.http.patch<Cliente>(this.urlBackend+'/api/v1/cliente/'+cliente.cpf, cliente)
+  }
+
   public getById(cpf: string): Observable<Cliente>|undefined{
     return this.http.get<Cliente>(this.urlBackend+'/api/v1/cliente/'+cpf)
   }

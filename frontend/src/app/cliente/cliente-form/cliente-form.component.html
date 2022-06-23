@@ -1,16 +1,35 @@
 <h3>Formulário de Cliente</h3>
 <form #formUsuario="ngForm">
-  <label>Primeiro Nome:</label>
+  <mat-form-field>
+  <mat-label>CPF:</mat-label>
+  <input matInput
+         [(ngModel)]="cliente.cpf" name="cpf"><br/>
+  </mat-form-field>
+  <mat-form-field>
+  <mat-label>Primeiro Nome:</mat-label>
   <input matInput
          [(ngModel)]="cliente.primeiroNome" name="primeiroNome"><br/>
-  <label>Sobrenome:</label>
+  </mat-form-field>
+  <mat-form-field>
+  <mat-label>Sobrenome:</mat-label>
   <input matInput
          [(ngModel)]="cliente.sobreNome" name="sobrenome"><br />
-  <label>Telefone:</label>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Data Nascimento:</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="cliente.dataNascimento" name="dataNascimento">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+  <mat-label>Telefone:</mat-label>
   <input matInput
          [(ngModel)]="cliente.telefone" name="telefone"><br />
-  <label>Endereco:</label>
+  </mat-form-field>
+  <mat-form-field>
+  <mat-label>Endereco:</mat-label>
   <input matInput
          [(ngModel)]="cliente.endereco" name="endereco"><br />
-  <input type="button" title="Salvar" (click)="salvar(cliente)" value="Enviar">
+  </mat-form-field>
+  <button mat-flat-button color="primary" title="Salvar" (click)="salvar(cliente)" value="Enviar">Enviar</button>
 </form>

@@ -6,6 +6,10 @@ import {ClienteListComponent} from './cliente-list/cliente-list.component';
 import {FormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {ClienteRoutes} from "./cliente.routing";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatInputModule} from "@angular/material/input";
+import {MatNativeDateModule} from "@angular/material/core";
+import {NoopAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -17,7 +21,11 @@ import {ClienteRoutes} from "./cliente.routing";
   imports: [
     FormsModule,
     CommonModule,
-    RouterModule.forChild(ClienteRoutes)
+    RouterModule.forChild(ClienteRoutes),
+    MatDatepickerModule,
+    MatNativeDateModule,
+    NoopAnimationsModule,
+    MatInputModule
   ]
 })
 export class ClienteModule { }
