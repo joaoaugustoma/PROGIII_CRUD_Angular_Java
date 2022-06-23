@@ -1,1 +1,16 @@
-<p>cliente-form works!</p>
+<h3>Formulário de Cliente</h3>
+<form #formUsuario="ngForm">
+  <label>Primeiro Nome:</label>
+  <input matInput
+         [(ngModel)]="cliente.primeiroNome" name="primeiroNome"><br/>
+  <label>Sobrenome:</label>
+  <input matInput
+         [(ngModel)]="cliente.sobreNome" name="sobrenome"><br />
+  <label>Telefone:</label>
+  <input matInput
+         [(ngModel)]="cliente.telefone" name="telefone"><br />
+  <label>Endereco:</label>
+  <input matInput
+         [(ngModel)]="cliente.endereco" name="endereco"><br />
+  <input type="button" title="Salvar" (click)="salvar(cliente)" value="Enviar">
+</form>
