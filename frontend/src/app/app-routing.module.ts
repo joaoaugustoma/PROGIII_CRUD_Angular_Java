@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AlunoRoutes } from './aluno/aluno.routing';
+import {ClienteRoutes} from "./cliente/cliente.routing";
 
 const routes: Routes = [
-  ...AlunoRoutes
+  ...ClienteRoutes
 ];
 
 @NgModule({
