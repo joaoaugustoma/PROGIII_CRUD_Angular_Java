@@ -1,1 +1,8 @@
-<p>cliente-list works!</p>
+<h3>Lista de clientes</h3>
+<ul>
+  <li *ngFor="let cliente of clientes">
+    {{ cliente.cpf }} - {{cliente.primeiroNome}}
+    <button [routerLink]="['/cliente','editar', cliente.cpf]">Editar</button> -
+    <button (click)="confirmaRemocao(cliente)">Excluir</button>
+  </li>
+</ul>
