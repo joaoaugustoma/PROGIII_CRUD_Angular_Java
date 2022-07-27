@@ -1,10 +1,3 @@
-<h1>Nutshell</h1>
+<h1>CRUD com Angular e Java</h1>
 
-Projeto Interdisciplinar de Desenvolvimento de Software - UEG Campus CET
-
-<h2>Integrantes</h2>
-
-* Emanoel Parente
-* Joao Augusto
-* Luis Felipe
-* Pedro Guilherme
+Programação III - UEG Campus CET
